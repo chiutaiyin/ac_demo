@@ -26,7 +26,6 @@ Reducing the accent in input audio while preserving the speaker's voice.
         <source src="samples/on device/quint8_in1.wav" type="audio/mpeg">
       </audio>
     </td>
-
     <td>
       <audio controls>
         <source src="samples/on device/quint8_out1.wav" type="audio/mpeg">
@@ -40,7 +39,6 @@ Reducing the accent in input audio while preserving the speaker's voice.
         <source src="samples/on device/quint8_in2.wav" type="audio/mpeg">
       </audio>
     </td>
-
     <td>
       <audio controls>
         <source src="samples/on device/quint8_out2.wav" type="audio/mpeg">
@@ -63,7 +61,6 @@ Reducing the accent in input audio while preserving the speaker's voice.
         <source src="samples/on device/inagent1.wav" type="audio/mpeg">
       </audio>
     </td>
-
     <td>
       <audio controls>
         <source src="samples/on device/inagent1_no_vnni.wav" type="audio/mpeg">
@@ -92,13 +89,11 @@ Converting the accent in input audio to match a reference native speaker’s voi
         <source src="samples/ac_cloud/male_in.wav" type="audio/mpeg">
       </audio>
     </td>
-
     <td>
       <audio controls>
         <source src="samples/ac_cloud/male.wav" type="audio/mpeg">
       </audio>
     </td>
-
     <td>
       <audio controls>
         <source src="samples/ac_cloud/male_out.wav" type="audio/mpeg">
@@ -112,13 +107,11 @@ Converting the accent in input audio to match a reference native speaker’s voi
         <source src="samples/ac_cloud/female_in.wav" type="audio/mpeg">
       </audio>
     </td>
-
     <td>
       <audio controls>
         <source src="samples/ac_cloud/female.wav" type="audio/mpeg">
       </audio>
     </td>
-
     <td>
       <audio controls>
         <source src="samples/ac_cloud/female_out.wav" type="audio/mpeg">
@@ -145,10 +138,125 @@ The offline model is better at softening thicker accents and handling faster spe
         <source src="samples/flow/flow_base_input1.mp4" type="video/mp4">
       </video>
     </td>
-
     <td>
       <video controls width="500">
         <source src="samples/flow/flow_base_output1.mp4" type="video/mp4">
+      </video>
+    </td>
+  </tr>
+
+</table>
+
+
+<h2 style="margin-top:80px;">Supporting technologies</h2>
+<p class="section-text">
+To enable accent softening and conversion, we developed several supporting models, including voice conversion, audio quality enhancement, and temporal alignment.
+</p>
+
+<h3>Voice conversion</h3>
+<table>
+  <tr>
+    <th>Input</th>
+    <th>Reference voice</th>
+    <th>Output</th>
+  </tr>
+
+  <tr>
+    <td>
+      <video controls width="500">
+        <source src="samples/vc/vc_src1.mp4" type="video/mp4">
+      </video>
+    </td>
+    <td>
+      <video controls width="500">
+        <source src="samples/vc/vc_ref1.mp4" type="video/mp4">
+      </video>
+    </td>
+    <td>
+      <video controls width="500">
+        <source src="samples/vc/vc_tgt1.mp4" type="video/mp4">
+      </video>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <video controls width="500">
+        <source src="samples/vc/vc_src2.mp4" type="video/mp4">
+      </video>
+    </td>
+    <td>
+      <video controls width="500">
+        <source src="samples/vc/vc_ref2.mp4" type="video/mp4">
+      </video>
+    </td>
+    <td>
+      <video controls width="500">
+        <source src="samples/vc/vc_tgt2.mp4" type="video/mp4">
+      </video>
+    </td>
+  </tr>
+
+<h3>Audio quality enhancement</h3>
+<table>
+  <tr>
+    <th>Input</th>    
+    <th>Output</th>
+  </tr>
+
+  <tr>
+    <td>
+      <video controls width="500">
+        <source src="samples/audio enhancer/enh_in1.wav" type="video/mp4">
+      </video>
+    </td>
+    <td>
+      <video controls width="500">
+        <source src="samples/audio enhancer/enh_out1.wav" type="video/mp4">
+      </video>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <video controls width="500">
+        <source src="samples/audio enhancer/enh_in2.wav" type="video/mp4">
+      </video>
+    </td>
+    <td>
+      <video controls width="500">
+        <source src="samples/audio enhancer/enh_out2.wav" type="video/mp4">
+      </video>
+    </td>
+  </tr>
+
+</table>
+
+<h3>Audio temporal alignment</h3>
+<p class="section-text">
+Adjusting the timing of input speech to match that of a reference audio.
+</p>
+<table>
+  <tr>
+    <th>Input</th>
+    <th>Reference audio</th>
+    <th>Output</th>
+  </tr>
+
+  <tr>
+    <td>
+      <video controls width="500">
+        <source src="samples/overview/tgt_raw.wav" type="video/mp4">
+      </video>
+    </td>
+    <td>
+      <video controls width="500">
+        <source src="samples/overview/src_raw.wav" type="video/mp4">
+      </video>
+    </td>
+    <td>
+      <video controls width="500">
+        <source src="samples/overview/tgt_align.wav" type="video/mp4">
       </video>
     </td>
   </tr>
