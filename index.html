@@ -6,9 +6,23 @@
     color: #444;
   }
   </style>
+
+  <style>
+    .section-group {
+      counter-reset: section;
+    }
+    
+    .numbered {
+      counter-increment: section;
+    }
+    
+    .numbered::before {
+      content: counter(section) ". ";
+    }
+</style>
 </head>
 
-<h2>Audio Softening (streaming real-time model)</h2>
+<h2 class="numbered">Audio Softening (streaming real-time model)</h2>
 <p class="section-text">
 Reducing the accent in input audio while preserving the speaker's voice.
 </p>
@@ -71,7 +85,7 @@ Reducing the accent in input audio while preserving the speaker's voice.
 </table>
 
 
-<h2 style="margin-top:80px;">Audio Conversion (streaming real-time model)</h2>
+<h2 class="numbered" style="margin-top:80px;">Audio Conversion (streaming real-time model)</h2>
 <p class="section-text">
 Converting the accent in input audio to match a reference native speaker’s voice and accent.
 </p>
@@ -121,7 +135,7 @@ Converting the accent in input audio to match a reference native speaker’s voi
 
 </table>
 
-<h2 style="margin-top:80px;">Audio Softening (offline model)</h2>
+<h2 class="numbered" style="margin-top:80px;">Audio Softening (offline model)</h2>
 <p class="section-text">
 The offline model is better at softening thicker accents and handling faster speech speed.
 </p>
@@ -148,7 +162,7 @@ The offline model is better at softening thicker accents and handling faster spe
 </table>
 
 
-<h2 style="margin-top:80px;">Supporting technologies</h2>
+<h2 class="numbered" style="margin-top:80px;">Supporting technologies</h2>
 <p class="section-text">
 To enable accent softening and conversion, we developed several supporting models, including voice conversion, audio quality enhancement, and temporal alignment.
 </p>
